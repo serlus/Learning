@@ -13,4 +13,7 @@ def test_some_data(some_data):
 
 """Use sei launch"""
 
+'test_some_data'
+
 'mais outro'
+
