@@ -11,3 +11,4 @@ def test_some_data(some_data):
     """Use fixture return value in a test."""
     assert some_data == 42
 
+"""Use sei launch"""
