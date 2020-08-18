@@ -2,7 +2,9 @@ def test_one():
     assert 1 in [2, 3, 4]
 
 
-def test_two():
+def test_two(self, expected):
+    """
+    """
     a = 3
     b = 7
     assert a < b
