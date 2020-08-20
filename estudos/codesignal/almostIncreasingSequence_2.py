@@ -16,19 +16,32 @@ true
 
 def almostInc(sequence):
     z = len(sequence) -1
+    # n = []
     f = 0
-    n = []
-    for a, b in zip(sequence, sequence[1:]):
-        if a < b:
-            n = True
-            f += 1
-        elif a >= b:
-            pass
-    print(z == f or f-1)
-     
+    n = [a for a, b in zip(sequence, sequence[1:]) if a < b in sequence]
+    print(n)
+            # pop()
+            # n = True
+            # f += 1
+        # elif a >= b:  # como fazer o elemento 'b' passar a ter o valor do prox elemento?
+    # print(n)
+    
+    if z == f or f-1:
+        print('true')
+        return True
+    else:
+        print('false')
+        return False
+    
+
+
 if __name__ == "__main__":
     sequence = [1, 3, 2, 1]
     almostInc(sequence)
-    sequence = [1, 2, 3]
+    sequence = [1, 3, 2]
+    almostInc(sequence)
+    sequence = [1, 2, 3, 4, 5]
+    almostInc(sequence)
+    sequence = [1, 3, 5]
     almostInc(sequence)
     
