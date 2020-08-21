@@ -10,6 +10,7 @@ pytest-cov = "*"
 [packages]
 flake8 = "*"
 pytest = "*"
+pymongo = "*"
 
 [requires]
 python_version = "3.8"

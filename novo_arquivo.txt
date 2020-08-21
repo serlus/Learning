@@ -1,0 +1,5 @@
+Linha gerada com a funcao 'leitura_arquivo' 
+
+Linha gerada com a funcao 'altera_arquivo' 
+
+Linha gerada com a funcao 'altera_arquivo_2' 
