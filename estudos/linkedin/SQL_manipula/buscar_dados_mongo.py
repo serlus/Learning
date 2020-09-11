@@ -1,9 +1,8 @@
-import pymongo
 from pymongo import MongoClient
 
 
 def manipula_dados_mongoDB():
-    cliente = pymongo.MongoClient("mongodb://localhost:27017")
+    cliente = MongoClient("mongodb://localhost:27017")
     db = cliente.conheca_python
 
     for i in range(1, 10):
