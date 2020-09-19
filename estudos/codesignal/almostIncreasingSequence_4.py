@@ -12,19 +12,17 @@ false
 >>> sequence = [1, 3, 2]
 >>> almostInc(sequence)
 true
+
 """
 
 def almostInc(sequence):
-    z = len(sequence) -1
-    f = 0
-    n = []
-    for a, b in zip(sequence, sequence[1:]):
-        if a < b:
-            n = a
-            # f += 1
-        elif a >= b:
-            pass
-    if z == f or f-1:
+    l = []
+    for i in sequence:
+        if i not in sequence:
+            l.append(i)
+    l.sort()
+
+    if l == sequence or z - 1 == f:
         print('true')
     else:
         print('false')
@@ -33,6 +31,12 @@ if __name__ == "__main__":
     sequence = [1, 3, 2, 1]
     almostInc(sequence)
     sequence = [1, 2, 3]
+    almostInc(sequence)
+    sequence = [1, 2, 5, 3, 5]  # 1 < 2 | 2 < 5 | 5 > 3 | 3 < 5
+    almostInc(sequence)
+    sequence = [1, 2, 3, 4, 99, 5, 6]
+    almostInc(sequence)
+    sequence = [123, -17, -5, 1, 2, 3, 12, 43, 45]
     almostInc(sequence)
     
 

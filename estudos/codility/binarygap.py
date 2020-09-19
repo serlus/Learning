@@ -1,6 +1,4 @@
 """
-
-
 A binary gap within a positive integer N is any maximal sequence of consecutive zeros 
 that is surrounded by ones at both ends in the binary representation of N.
 
@@ -28,7 +26,9 @@ Write an efficient algorithm for the following assumptions:
         N is an integer within the range [1..2,147,483,647].
 
 pode usar função bin()?
+
 """
+
 def binary_gap(N):
     """ Função que retorne a contagem do gap binário
     >>>binary_gap(9)  # bin(9) -> 1001

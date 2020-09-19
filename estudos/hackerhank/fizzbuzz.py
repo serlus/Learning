@@ -1,6 +1,9 @@
-def fizzBuzz(n):
+def fizz_buzz(n):
     """A function that returns the number, in the range n
     that function returns:
+    fizz for divisor 3
+    buzz for divisor 5
+    fizzbuzz for divisor 3 and 5
     
     >>> FizzBuzz(15)
     1
@@ -20,21 +23,17 @@ def fizzBuzz(n):
     fizzbuzz
     
 
-    Args:
-        n ([type]): [description]
     """
     # Write your code here
-    for i in range(n):  # for each number in n
-        i += 1
-        if i % 3 and i % 5 == 0:
-            if i % 3 == 0:
-                print('fizz')
-            elif i % 5 == 0:
-                print('buzz')
+    for i in range(n + 1):
+        if i % 15 == 0: 
             print('fizzbuzz')
+        elif i % 3 == 0:
+            print('fizz')
+        elif i % 5 == 0:
+            print('buzz')
         else:
             print(i)
 
-
 if __name__ == '__main__':
-    fizzBuzz(15)
+    fizz_buzz(15)

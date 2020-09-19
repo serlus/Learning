@@ -35,3 +35,4 @@ if __name__ == '__main__':
     contar_caracteres('renzo')
     print()
     contar_caracteres('banana')
+

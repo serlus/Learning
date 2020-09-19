@@ -8,25 +8,26 @@ considered to be strictly increasing.]
 
 >>> sequence = [1, 3, 2, 1]
 >>> almostInc(sequence)
-false
+False
 >>> sequence = [1, 3, 2]
 >>> almostInc(sequence)
-true
+True
+
 """
 
 def almostInc(sequence):
     z = len(sequence) -1
-    # n = []
+    n = []
     f = 0
     n = [a for a, b in zip(sequence, sequence[1:]) if a < b in sequence]
-    print(n)
+    # print(n)
             # pop()
             # n = True
             # f += 1
         # elif a >= b:  # como fazer o elemento 'b' passar a ter o valor do prox elemento?
     # print(n)
     
-    if z == f or f-1:
+    if z == f or z == f-1:
         print('true')
         return True
     else:

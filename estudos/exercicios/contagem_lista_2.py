@@ -4,7 +4,7 @@ def contar_caracteres(s):
     caracter_anterior = caracter_ordenado[0]
 
     contagem = 1
-    caracter = []
+    # caracter = []
 
     for caracter in caracter_ordenado[1:]:
         if caracter == caracter_anterior:
