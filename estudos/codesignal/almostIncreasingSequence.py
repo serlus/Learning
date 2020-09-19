@@ -12,6 +12,7 @@ false
 >>> sequence = [1, 3, 2]
 >>> almostInc(sequence)
 true
+
 """
 
 def almostInc(sequence):
