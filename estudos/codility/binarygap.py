@@ -37,4 +37,8 @@ def binary_gap(N):
     length: 4
 
     """
-    pass
+    N = bin(N)
+    
+    return N
+
+print(binary_gap(9))
