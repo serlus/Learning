@@ -2,7 +2,11 @@ from collections import deque
 
 
 def less_to_great_significant_digit(s):
-    return map(int, reversed(s))
+    result = []
+    s = list(s)
+    while s:
+        result.append(int(s.pop()))
+    return result
 
 def zip_longest(n, n2, fillvalue):
     n = list(n)
@@ -10,8 +14,10 @@ def zip_longest(n, n2, fillvalue):
     minor, greater = sorted([n, n2], key=len)
     missing = len(greater) - len(minor)
     minor.extend([fillvalue] * missing)
-
-    return zip(greater, minor)
+    result = []
+    for i, d in enumerate(greater):
+        result.append((d, minor[i]))
+    return result
 
 def binary_sum(n, n2):
     """
