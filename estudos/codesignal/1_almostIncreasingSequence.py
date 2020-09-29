@@ -15,7 +15,7 @@ true
 
 """
 
-def almostInc(sequence):
+def almost_inc(sequence):
     z = len(sequence) -1
     f = 0
     n = []
