@@ -34,27 +34,10 @@ False
 """
 
 def almostInc(sequence):
-    z = len(sequence)
-    f = 1
-    lista = []
-    before_n = sequence[0]
-    
-    for num in sequence[1:]:
-        if not before_n > num:
-            lista.append(before_n)
-            f += 1
-            before_n = num
-        else:
-            before_n = num
-    
-    print(lista)
-    if z == f or z - 1 == f:
-        resultado =  True
-    else:
-        resultado = False
-    # print(resultado)
-    return resultado
+    lista =[]
+    resultado = [num for num in sequence if not lista]
 
+    return resultado
 
 if __name__ == "__main__":
     sequence = [1, 3, 2, 1]
